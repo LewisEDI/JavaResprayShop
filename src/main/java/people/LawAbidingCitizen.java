@@ -1,6 +1,8 @@
 package people;
 
-public class LawAbidingCitizen extends Person {
+import behaviours.ICanPay;
+
+public class LawAbidingCitizen extends Person implements ICanPay {
 
     private int availableCash;
     private String job;

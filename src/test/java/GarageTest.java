@@ -15,7 +15,7 @@ public class GarageTest {
     public void before() {
         garage = new Garage("Java Respray Shop");
         stolenCar = new StolenCar("red", "Ferrari", 1994, true);
-        legalCar = new LegalCar("blue", "Ford", 2002);
+        legalCar = new LegalCar("blue", "Ford", 2002, false);
 
     }
 

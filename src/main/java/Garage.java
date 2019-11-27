@@ -1,28 +1,29 @@
 import behaviours.IDeliverable;
+import cars.Car;
 
 import java.util.ArrayList;
 
 public class Garage {
 
     private String name;
-    private ArrayList<IDeliverable> vehicles;
+    private ArrayList<Car> cars;
 
     public Garage(String name){
-        this.vehicles = new ArrayList<IDeliverable>();
+        this.cars = new ArrayList<Car>();
         this.name = name;
 
     }
 
     public int vehicleCount(){
-        return vehicles.size();
+        return cars.size();
     }
 
-    public void addVehicles(IDeliverable vehicle){
-        this.vehicles.add(vehicle);
+    public void addVehicles(Car car){
+        this.cars.add(car);
         }
 
     public void scrapVehicles(){
-        vehicles.clear();
+        cars.clear();
     }
 
 

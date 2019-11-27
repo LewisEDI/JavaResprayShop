@@ -5,11 +5,13 @@ public abstract class Car {
     String colour;
     String model;
     int year;
+    boolean stolen;
 
-    public Car(String colour, String model, int year){
+    public Car(String colour, String model, int year, boolean stolen){
         this.colour = colour;
         this.model = model;
         this.year = year;
+        this.stolen = stolen;
     }
 
     public String getModel(){
